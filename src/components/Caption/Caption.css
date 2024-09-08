@@ -1,0 +1,68 @@
+.caption {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 1rem;
+    height: 85%;
+}
+
+#canvas {
+    z-index: 2;
+    background-color: #fff;
+    width: 400px;
+}
+
+.toolbar {
+    background-color: #3f3f3f;
+    border-radius: 10%;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.tool-icon {
+    padding: 4px;
+    border-radius: 30%;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.toolbar input{
+    width: 1.5rem;
+}
+
+.tool-icon:hover .icon {
+    transform: scale(1.4);
+}
+
+.tool-icon:hover {
+    background-color: #535353;
+
+
+}
+
+@media screen and (max-width: 769px) {
+    .caption {
+        flex-direction: column;
+    }
+    .toolbar{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .caption {
+        flex-direction: column;
+    }
+    .toolbar{
+        flex-direction: row;
+    }
+}

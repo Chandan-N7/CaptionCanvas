@@ -1,0 +1,29 @@
+.app{
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #304463;
+    padding: 20px 5rem;
+}
+.header h1{
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.contact p{
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 769px) {
+    .header{
+       flex-direction: column;
+       gap: 10px;
+    }
+}
